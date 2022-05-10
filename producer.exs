@@ -6,11 +6,11 @@ defmodule Producer do
   use GenStage
 
   def start_link(_args) do
-    IO.puts("Producer started")
     GenStage.start_link(__MODULE__, [], name: Producer)
   end
 
   def init(_) do
+    IO.puts("Producer started")
     {:producer, 0}
   end
 

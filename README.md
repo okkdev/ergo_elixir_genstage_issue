@@ -6,7 +6,7 @@ Using Elixir 1.13.4 and Go 1.18.1
 
 Start Elixir producer:
 ```sh
-elixir --sname producer@localhost --cookie cookiesecret producer.exs
+elixir --name producer@localhost --cookie cookiesecret producer.exs
 ```
 
 Start Ergo consumer:
